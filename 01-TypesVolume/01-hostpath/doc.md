@@ -1,12 +1,12 @@
 ### What ?
-- là loại volume storage được Kubernetes hỗ trợ để phát triển và thử nghiệm trên một cụm chỉ có 1 node đơn.
+- Lọai Volume này sẽ gắn một file hoặc thư mục trên node vào pod.
 
 ### Trường hợp sử dụng (When/Why):
 - sử dụng môi trường phát triển và thử nghiệm.
 - Cần truy cập file và thư mục của host (không an toàn).
 
 ### Tính năng
-- Một hostPath Volume sẽ gắn một file hoặc thư mục ngay trên node máy chủ vào pod của bạn để làm không gian lưu trữ.
+- Một hostPath Volume sẽ gắn một file hoặc thư mục ngay trên node vào pod của bạn để làm không gian lưu trữ.
 
 ### hostPath configuration example
 ```
