@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: myapp
+spec: 
+  selector:
+    matchLabels:
+      app: myapp
+  template:
+    metadata:
+      labels:
+        app: myapp    
+    spec:
+      volumes:
+        - name: myvol
+          persistentVolumeClaim: 
+            claimName: pvc1
+      containers:
+      - name: myapp
+        image: busybox
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "100m"
+        command:
+          - sleep
+          - "600"
+        volumeMounts:
+          - name: myvol
+            mountPath: "/data"
