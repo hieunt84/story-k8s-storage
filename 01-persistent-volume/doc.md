@@ -5,4 +5,9 @@
 - A PVC là 1 yêu cầu lưu trữ của user.
 - Storage Classes (SC) là 1 loại tài nguyên, để miêu tả những đặc tính (nhanh chậm, iops), chính sách (lưu trữ, chất lượng dịch vụ,...) của hệ thống lưu trữ bên dưới (backend storage), thỉnh thoảng SC còn được gọi là hồ sơ (profiles).
 
+### ref
+```
+https://kubernetes.io/docs/concepts/storage/persistent-volumes/
+```
+
 
